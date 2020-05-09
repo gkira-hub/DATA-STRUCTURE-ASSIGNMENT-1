@@ -1,7 +1,9 @@
+//--------------------QUICK SORT------------------------
 #include<stdio.h>
 #include<stdlib.h>
 #define MAX 100
 
+//FUNCATION TO DIVIDE ARRAY IN SUB ARRAYS ACCORDIND TO THE VALUE OF PIVOT
 int division_of_array(int a[],int start ,int end)
 {
     int temp,i,j,p;
@@ -23,6 +25,7 @@ int division_of_array(int a[],int start ,int end)
     return (i + 1);
 }
 
+//RECURSIVE QUICK SORT ALGO
 void quick_sort(int a[],int start,int end)
 {
     int pivot;
