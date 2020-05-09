@@ -1,6 +1,8 @@
+//--------------------SELECTION SORT----------------------
 #include<stdio.h>
 #include<stdlib.h>
 
+//SWAPPING
 void swaping(int *q ,int *w)
 {
     int temp=*q;
@@ -24,9 +26,10 @@ int main()
     {
         printf("%d\t",a[i]);
     }
+    //SELECTION SORT
     for(int x=0;x<n-1;x++)
     {
-        lowest=x;
+        lowest=x; //ASSIGNING VALUE TO  LOWEST INDEX VALUE FOR MAKING VALUE AT THIS INDEX LOWEST BY SWAPPING AND COMPERISONS
         for(int y=x+1;y<n;y++)
         {
             if(a[y]<a[lowest])
