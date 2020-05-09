@@ -1,6 +1,8 @@
+//---------------------BUBBLE SORT----------------------
 #include<stdio.h>
 #include<stdlib.h>
 
+//SWAPING 
 void swaping(int *q ,int *w,int swap)
 {
     int temp=*q;
@@ -25,6 +27,7 @@ int main()
     {
         printf("%d\t",a[i]);
     }
+    //BUBBLE SORT
     for(int x=n-2;x>=0;x--)
     {
         int swap=0;
