@@ -11,6 +11,7 @@ struct node{
     struct node* right;
 }*Node;
 
+//FUNCATION FOR CREATING A NODE IN BST
 struct node *createNode(char *x)
 {
     struct node* temp=(struct node*)malloc(sizeof(struct node));
@@ -22,7 +23,7 @@ struct node *createNode(char *x)
     return temp;
 }
 
-
+//FUNCATION FOR INSERTING A NEW NODE IN BST AFTER FINDING A SUITABLE POSITION FOR IT USING STRCMP 
 struct node* insert(char* x,struct node* p)
 {
 struct node* temp=(struct node*)malloc(sizeof(struct node));
@@ -54,7 +55,7 @@ struct node* temp=(struct node*)malloc(sizeof(struct node));
         }
 }
 
-
+//INORDER TRANSVERSAL OF BST
 int inorder(struct node *p)
 {
     if(p==NULL)
@@ -68,7 +69,7 @@ int inorder(struct node *p)
 }
 int main()
 {
-        char a[COUNT][MAX]={"Arthi","Christy","Dorothy","Fraser","Eliza"};
+        char a[COUNT][MAX]={"Arthi","Christy","Dorothy","Fraser","Eliza"};//NAMES TO STORE IN BST
         struct node* root=createNode(a[0]);
         for(int i=1;i<5;i++)
         insert(a[i],root);
