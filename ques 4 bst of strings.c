@@ -62,8 +62,8 @@ int inorder(struct node *p)
     {
         return;
     }
-    puts(p->name);
     inorder(p->left);
+    puts(p->name);
     inorder(p->right);
 
 }
